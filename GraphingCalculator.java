@@ -44,8 +44,8 @@ public class GraphingCalculator extends javax.swing.JFrame {
 
         this.setTitle("Graphing Calculator");
         
-        setPreferredSize(new Dimension(440, 440));
-
+        this.setPreferredSize(new Dimension(440, 440));
+        
         jtxtDisplay.setEnabled(true);
 
         setResizable(false);
@@ -132,7 +132,8 @@ public class GraphingCalculator extends javax.swing.JFrame {
                             g.setFont(new Font("arial", Font.BOLD, 9));
                             g.setColor(Color.DARK_GRAY);
                             g.drawString("" +  1*xx*(xscale), xx+180+(int)x, 130+(int)y);
-                            g.drawString("" + -1*xx*(yscale/xscale), 180+(int)x, xx+130+(int)y);
+                            ///if(!graphing.contains("Math.sin(x)") && !graphing.contains("Math.cos(x)") && !graphing.contains("Math.tan(x)"))
+                                ///g.drawString("" + -1*xx*(yscale/xscale), 180+(int)x, xx+130+(int)y);
                         }
                         
                         interpreter.set("x", xx - 1);
@@ -209,7 +210,7 @@ public class GraphingCalculator extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("OkelyKodely's Calculator");
-        setBackground(new java.awt.Color(204, 204, 204));
+        setBackground(java.awt.Color.red);
         setMinimumSize(new java.awt.Dimension(300, 400));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -242,7 +243,7 @@ public class GraphingCalculator extends javax.swing.JFrame {
 
         jButton3.setBackground(java.awt.Color.yellow);
         jButton3.setFont(new java.awt.Font("Monospaced", 1, 20)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(105, 50, 33));
+        jButton3.setForeground(new java.awt.Color(102, 102, 102));
         jButton3.setText("C");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -536,9 +537,9 @@ public class GraphingCalculator extends javax.swing.JFrame {
         });
         getContentPane().add(jButton29, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 310, 60, 50));
 
-        jButton30.setBackground(new java.awt.Color(255, 204, 102));
+        jButton30.setBackground(java.awt.Color.orange);
         jButton30.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
-        jButton30.setForeground(new java.awt.Color(255, 255, 255));
+        jButton30.setForeground(new java.awt.Color(51, 51, 51));
         jButton30.setText("graph");
         jButton30.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -547,7 +548,7 @@ public class GraphingCalculator extends javax.swing.JFrame {
         });
         getContentPane().add(jButton30, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 310, 60, 50));
 
-        graph.setBackground(new java.awt.Color(225, 225, 225));
+        graph.setBackground(new java.awt.Color(0, 0, 0));
         graph.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         getContentPane().add(graph, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 10, 360, 260));
 
@@ -561,6 +562,7 @@ public class GraphingCalculator extends javax.swing.JFrame {
         });
         getContentPane().add(jButton31, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 310, 60, 50));
 
+        jButton32.setBackground(new java.awt.Color(0, 255, 153));
         jButton32.setText("zoom out");
         jButton32.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -569,6 +571,7 @@ public class GraphingCalculator extends javax.swing.JFrame {
         });
         getContentPane().add(jButton32, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 290, -1, -1));
 
+        jButton33.setBackground(new java.awt.Color(0, 255, 153));
         jButton33.setText("zoom in");
         jButton33.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -577,6 +580,7 @@ public class GraphingCalculator extends javax.swing.JFrame {
         });
         getContentPane().add(jButton33, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 290, -1, -1));
 
+        jButton34.setBackground(new java.awt.Color(0, 255, 153));
         jButton34.setText("v");
         jButton34.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -585,6 +589,7 @@ public class GraphingCalculator extends javax.swing.JFrame {
         });
         getContentPane().add(jButton34, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 370, 50, 20));
 
+        jButton35.setBackground(new java.awt.Color(0, 255, 153));
         jButton35.setText("<");
         jButton35.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -593,6 +598,7 @@ public class GraphingCalculator extends javax.swing.JFrame {
         });
         getContentPane().add(jButton35, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 350, 50, 20));
 
+        jButton36.setBackground(new java.awt.Color(0, 255, 153));
         jButton36.setText(">");
         jButton36.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -601,6 +607,7 @@ public class GraphingCalculator extends javax.swing.JFrame {
         });
         getContentPane().add(jButton36, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 350, 50, 20));
 
+        jButton37.setBackground(new java.awt.Color(0, 255, 153));
         jButton37.setText("^");
         jButton37.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1075,9 +1082,26 @@ public class GraphingCalculator extends javax.swing.JFrame {
             setPreferredSize(new Dimension(840, 440));
             pack();
             
-            setGraph();
+            graph.show();
             
+            Graphics g = graph.getGraphics();
+
+            g.setColor(new Color(200, 240, 200));
+            g.fillRect(0, 0, 360, 260);
+            
+            for(int yy=0; yy<260; yy+=10) {
+                if(yy%30==0) {
+                    g.drawLine(0, yy, 360, yy);
+                }
+            }
+            for(int xx=0; xx<360; xx+=10) {
+                if(xx%30==0) {
+                    g.drawLine(xx, 0, xx, 260);
+                }
+            }
+
             graphOn = true;
+
         } else {
             setPreferredSize(new Dimension(440, 440));
             pack();

@@ -44,7 +44,7 @@ public class GraphingCalculator extends javax.swing.JFrame {
 
         this.setTitle("Graphing Calculator");
         
-        setPreferredSize(new Dimension(440, 400));
+        setPreferredSize(new Dimension(440, 440));
 
         jtxtDisplay.setEnabled(true);
 
@@ -1072,19 +1072,14 @@ public class GraphingCalculator extends javax.swing.JFrame {
     private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
         
         if(!graphOn) {
-            setPreferredSize(new Dimension(840, 400));
+            setPreferredSize(new Dimension(840, 440));
             pack();
-
-            try {
-                Thread.sleep(2000);
-            } catch(Exception e) {
-            }
             
             setGraph();
             
             graphOn = true;
         } else {
-            setPreferredSize(new Dimension(440, 400));
+            setPreferredSize(new Dimension(440, 440));
             pack();
             
             graphOn = false;

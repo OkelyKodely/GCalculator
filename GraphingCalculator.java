@@ -261,7 +261,7 @@ public class GraphingCalculator extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 70, 60, 50));
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 310, 60, 50));
 
         jButton5.setBackground(java.awt.Color.blue);
         jButton5.setFont(new java.awt.Font("Monospaced", 1, 20)); // NOI18N
@@ -535,7 +535,7 @@ public class GraphingCalculator extends javax.swing.JFrame {
                 jButton29ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton29, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 310, 60, 50));
+        getContentPane().add(jButton29, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 310, 60, 50));
 
         jButton30.setBackground(java.awt.Color.orange);
         jButton30.setFont(new java.awt.Font("Monospaced", 1, 12)); // NOI18N
@@ -546,7 +546,7 @@ public class GraphingCalculator extends javax.swing.JFrame {
                 jButton30ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton30, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 310, 60, 50));
+        getContentPane().add(jButton30, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 70, 60, 50));
 
         graph.setBackground(new java.awt.Color(0, 0, 0));
         graph.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
